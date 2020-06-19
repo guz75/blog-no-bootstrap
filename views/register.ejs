@@ -1,36 +1,62 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>My Blog v2</title>
-  </head>
-  <body>
-    <form class="" action="/users/register" method="post">
-      <div class="">
-        <label>Name</label>
-        <input type="text" name="name">
-      </div>
-      <div class="">
-        <label>Email</label>
-        <input type="email" name="email">
-      </div>
-      <div class="">
-        <label>Username</label>
-        <input type="text" name="username">
-      </div>
-      <div class="">
-        <label>Password</label>
-        <input type="password" name="password">
-      </div>
-      <div class="">
-        <label>Confirm Password</label>
-        <input type="password" name="password2">
-      </div>
-      <div class="">
-        <label>Website <em>(optional)</em></label>
-        <input type="text" name="website">
-      </div>
-      <button type="submit" name="button">Register</button>
-    </form>
-  </body>
-</html>
+<%- include("partials/header") %>
+      <!-- Registration form -->
+      <section id="register">
+        <div class="row no-gutters">
+          <!-- Manual registration -->
+          <div class="col-lg-8">
+            <div class="form-style">
+              <h1>Please Register</h1>
+              <form class="" action="/users/register" method="post">
+                <div class="form-group">
+                  <label>Name</label>
+                  <input class="form-control" type="text" name="name" />
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input class="form-control" type="email" name="email" />
+                </div>
+                <div class="form-group">
+                  <label>Username</label>
+                  <input class="form-control" type="text" name="username" />
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input class="form-control" type="password" name="password" />
+                </div>
+                <div class="form-group">
+                  <label>Confirm Password</label>
+                  <input
+                    class="form-control"
+                    type="password"
+                    name="password2"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Website <em>(optional)</em></label>
+                  <input class="form-control" type="text" name="website" />
+                </div>
+                <button class="btn btn-md btn-dark btn-margin-top" type="submit" name="button">
+                  Register
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- Social media register -->
+          <div class="col-lg-4">
+            <div class="social-register">
+              <a class="btn btn-block btn-social btn-facebook">
+                <span class="fa fa-facebook"></span> Register with Facebook
+              </a>
+              <a class="btn btn-block btn-social btn-google">
+                <span class="fa fa-google"></span> Register with Google
+              </a>
+              <a class="btn btn-block btn-social btn-twitter">
+                <span class="fa fa-twitter"></span> Register with Twitter
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+<%- include ("partials/footer") %>
+

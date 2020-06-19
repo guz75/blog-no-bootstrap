@@ -13,6 +13,12 @@ router.get("/register", (req, res) => {
   res.render("register");
 });
 
+// Render register page NO BOOTSTRAP (TEMP)
+router.get("/register_nobs", (req, res) => {
+  res.render("register_noBS");
+});
+
+
 // Register process
 router.post("/register", (req, res) => {
   const name = req.body.name;
