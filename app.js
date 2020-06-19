@@ -24,7 +24,16 @@ db.once('open', function() {
   console.log("MongoDB connected successfully");
 });
 
+// Mongoose models
+const Article = require("./models/article");
+const User = require("./models/user");
 
+// Route files
+const articles = require("./routes/articles");
+const users = require("./routes/users");
+
+app.use("/articles", articles);
+app.use("/users", users);
 
 // Express app connection
 app.listen(3000, function() {
