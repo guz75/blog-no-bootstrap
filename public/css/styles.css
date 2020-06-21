@@ -4,32 +4,14 @@ html {
 }
 
 body {
-  background-color: #5d7180;
+  background-color: #819fb5;
   font-family: 'Abel', sans-serif;
   font-size: 1.1rem;
 }
 
 h1 {
-  font-family: 'Damion', cursive;
   font-size: 3.5rem;
-}
-
-#articles-list {
-  background-color: #e3e3e3;
-}
-
-.articles-list-inner {
-  margin: 0 65px;
-  padding-top: 30px;
-  height: 82vh;
-}
-
-input {
-  font: 400 13.3333px Roboto;
-}
-
-input:-webkit-autofill::first-line {
-  font: 400 13.3333px Roboto;
+  opacity: 0.8;
 }
 
 .header-bg {
@@ -49,22 +31,45 @@ input:-webkit-autofill::first-line {
   font-size: 1.9rem;
 }
 
-#register {
-  background-color: #e3e3e3;
+.articles-list {
+  margin: 0 65px;
+  padding-top: 30px;
+  height: 82vh;
+}
+
+.heading-bubble {
+  background-color: #E5E5E5;
+  border: 2px solid #717171;
+  border-radius: 7px 35px;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 0 12px;
+}
+
+input {
+  font: 400 13.3333px Roboto;
+}
+
+input:-webkit-autofill::first-line {
+  font: 400 13.3333px Roboto;
+}
+
+.form-control {
+  border: 2px solid #717171;
 }
 
 .form-style {
-  margin: 0 40px 0 65px;
+  margin: 0 65px 0 65px;
   padding-top: 30px;
   padding-bottom: 40px;
 }
 
-.btn-margin-top {
-  margin-top: 20px;
+.social-style {
+  margin: 151px 65px 0 20px;
 }
 
-.social-register {
-  margin: 120px 65px 0 20px;
+.btn-margin-top {
+  margin-top: 20px;
 }
 
 a:not([href]) {
