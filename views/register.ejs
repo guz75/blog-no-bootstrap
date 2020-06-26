@@ -1,5 +1,15 @@
-<%- include("partials/header") %>
+<%- include("partials/header", {active: "Register"}) %>
 <!-- Registration form -->
+
+<!-- Flash messages code -->
+
+<% if(errors.length > 0) { %>
+  <% errors.forEach(error => { %>
+    <div class="alert alert-danger">
+      <%= error.msg %>
+    </div>
+  <% }); %>
+<% } %>
 
 <div class="row no-gutters">
   <!-- Manual registration -->

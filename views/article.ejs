@@ -1,0 +1,23 @@
+<%- include("partials/header", {active: "Article"}) %>
+
+<div class="articles-list">
+  <div class="heading-bubble">
+    <h1><%= article.title %></h1>
+  </div>
+  <div class="article-content">
+    <p><%= article.content %></p>
+  </div>
+
+  <% if(user) { %>
+    <% if(user.id === article.author) { %>
+      <div>
+        <a href="/articles/edit/<%= article._id %>"><button class="btn btn-md btn-dark btn-margin-top">Edit</button></a>
+        <a href="#"><button class="btn btn-md btn-danger btn-margin-top delete-article" data-id="<%= article._id %>">Delete</button></a>
+      </div>
+    <% } %>
+  <% } %>
+  
+  
+</div>
+
+<%- include("partials/footer") %>
